@@ -13,3 +13,24 @@ a {
   color: #333;
   text-decoration: none;
 }
+
+.container {
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: rgb(10, 173, 84);
+  color: #fff;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgb(9, 236, 104);
+}
+
+.btn.menu {
+  background: rgb(124, 116, 116);
+}
