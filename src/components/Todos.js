@@ -28,5 +28,7 @@ class Todos extends Component {
 // ! Warning: Failed prop type: The prop `item` is marked as required in `Todos`
 Todos.propTypes = {
   todos: PropTypes.array.isRequired,
+  finishTask: PropTypes.func.isRequired,
+  delTodo: PropTypes.func.isRequired,
 };
 export default Todos;
