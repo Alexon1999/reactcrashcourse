@@ -33,6 +33,7 @@ export class TodoItem extends Component {
 
   render() {
     const { id, title } = this.props.item;
+
     return (
       <div style={this.getStyle()}>
         <h3>

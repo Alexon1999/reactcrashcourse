@@ -5,7 +5,7 @@ import Title from './components/Title';
 import Todos from './components/Todos';
 import Header from './components/layout/Header';
 import AddTodo from './components/AddTodo';
-// import uuid from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 import About from './components/pages/About';
 import Axios from 'axios';
 
@@ -98,13 +98,16 @@ class App extends Component {
   // + Add todo
   addTodo = (title) => {
     // const newTodo = {
-    //   id: 4,
+    //   id: uuidv4(),
     //   title,
     //   completed: false,
     // };
-    // this.setState({ todos: [...this.state.todos , newTodo] })
+    //* import { v4 as uuidv4 } from 'uuid';
+    //* uuidv4() donne des random id
+    // console.log(newTodo.id);
+    // this.setState({ todos: [...this.state.todos, newTodo] });
 
-    // add todo to Api and UI
+    //* add todo to Api and UI
     Axios.post('https://jsonplaceholder.typicode.com/todos', {
       title,
       completed: false,
