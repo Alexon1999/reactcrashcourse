@@ -133,7 +133,7 @@ class App extends Component {
             <Route
               exact
               path='/'
-              render={(props) => (
+              render={() => (
                 <React.Fragment>
                   <AddTodo addTodo={this.addTodo} />
                   {/* props : proprieté , on va le passer dans Todos comme un Html attribut*/}
