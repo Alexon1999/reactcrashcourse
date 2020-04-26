@@ -129,7 +129,7 @@ class App extends Component {
             <Header />
             <Title />
 
-            {/* Landing page '/' */}
+            {/* Landing page '/' and exact  : first page  */}
             <Route
               exact
               path='/'

@@ -3,7 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-//? this function component is like render in class component , in the class we can have different methods
+//? this function component is like render in class component , but in the class we can have different methods
 function Header() {
   return (
     <header style={headerStyle}>

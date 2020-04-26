@@ -12,7 +12,7 @@ class Todos extends Component {
     // console.log(this.props.todos);
     //*map:  on va utiliser map qui va prendre un array et retourner un array
     return this.props.todos.map((todo) => (
-      //+ Comme on utilise map , il faut mettre un Key sinon c 'est erreur
+      //+ Comme on utilise map , il faut mettre un Key unique sinon c 'est erreur
       <TodoItem
         key={todo.id}
         finishTask={this.props.finishTask}
@@ -31,4 +31,5 @@ Todos.propTypes = {
   finishTask: PropTypes.func.isRequired,
   delTodo: PropTypes.func.isRequired,
 };
+
 export default Todos;
