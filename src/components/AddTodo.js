@@ -8,7 +8,7 @@ export class AddTodo extends Component {
   };
 
   // * Component level state and App Level state(Redux , Context or Graphql)
-  //+ on utilise compnent state pas comme avec todo ou on devait partager le state entre differents components , apps -> Todos -> TodoItems
+  //+ on utilise component state pas comme avec todo ou on devait partager le state entre differents components , apps -> Todos -> TodoItems
 
   // onChange = (e) => this.setState({ title : e.target.value });
   //* Si on a pas que title dans state , on va faire comme ceci

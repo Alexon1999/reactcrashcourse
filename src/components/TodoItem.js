@@ -25,8 +25,8 @@ export class TodoItem extends Component {
   }
 
   finishTask = (e) => {
-    // arrow function , this refère à  la class TodoItem
-    // ça non  finishTask(e){}
+    //* arrow function , this refère à  la class TodoItem
+    //* ça non  finishTask(e){}
 
     console.log(this.props);
   };
@@ -38,13 +38,13 @@ export class TodoItem extends Component {
       <div style={this.getStyle()}>
         <h3>
           {' '}
-          {/* this.finishtask.bind(this) or arrow function (to take this of class)  */}
+          {/* this.finishtask.bind(this) or arrow function (to take this of class and the method)  */}
           <input
             type='checkbox'
             onChange={this.props.finishTask.bind(this, id)}
           />{' '}
           {title}
-          <button style={btnStyle} onClick={this.props.delTodo.bind(this, id)}>
+          <button style={btnStyle} onClick={() => this.props.delTodo(id)}>
             X
           </button>
         </h3>

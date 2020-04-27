@@ -11,25 +11,30 @@ import Axios from 'axios';
 
 // * Class based component
 class App extends Component {
-  state = {
-    todos: [
-      // {
-      //   id: 1,
-      //   title: 'Take out the trash',
-      //   completed: false,
-      // },
-      // {
-      //   id: 2,
-      //   title: 'Play Fortnite',
-      //   completed: false,
-      // },
-      // {
-      //   id: 3,
-      //   title: 'Learn React framework',
-      //   completed: false,
-      // },
-    ],
-  };
+  constructor(props) {
+    super(props);
+    this.state = { todos: [] };
+  }
+
+  // state = {
+  //   todos: [
+  //     // {
+  //     //   id: 1,
+  //     //   title: 'Take out the trash',
+  //     //   completed: false,
+  //     // },
+  //     // {
+  //     //   id: 2,
+  //     //   title: 'Play Fortnite',
+  //     //   completed: false,
+  //     // },
+  //     // {
+  //     //   id: 3,
+  //     //   title: 'Learn React framework',
+  //     //   completed: false,
+  //     // },
+  //   ],
+  // };
 
   // + HTTP request
   componentDidMount() {
